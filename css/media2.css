@@ -1,0 +1,411 @@
+:root {
+  --gap1: 30px;
+  --gap2: 80px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .hero__img {
+    padding-top: 60px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .hero__img {
+    padding-top: 75px;
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+  }
+
+  .hero__descr {
+    width: 355px;
+  }
+
+  .btn-color {
+    width: 264px;
+    padding: 24px 40px;
+  }
+
+  .teacher__item:not(:nth-child(n+3)) {
+    margin-bottom: 20px;
+  }
+
+  .teacher__descr {
+    max-width: 255px;
+  }
+
+  .education__top {
+    width: auto;
+  }
+
+  .list__content {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .hero__text {
+    padding-left: 40px;
+  }
+
+  .education__container {
+    background-size: 150px 134px;
+    background-position: 33px 0px;
+  }
+
+  .education__top {
+    margin-left: 198px;
+  }
+
+  .education__descr {
+    margin-bottom: 17px;
+  }
+
+  .education__item {
+    padding-top: 110px;
+    margin-right: 0;
+    padding-left: 0;
+    background-position: left 19px;
+  }
+
+  .education__text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .teacher__item:not(:nth-child(n+3)) {
+    margin-bottom: 20px;
+  }
+
+  .teacher__descr {
+    width: auto;
+    max-width: 330px;
+  }
+
+  .cours__block {
+    padding: 30px 30px 0 30px;
+  }
+
+  .cours__btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px 45px;
+    text-align: center;
+    color: var(--color1);
+    width: 190px;
+    min-height: 59px;
+    background-color: #3F2AFF;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero__img {
+    display: none;
+}
+
+  .header__content {
+    justify-content: center;
+  }
+
+  .header__logo {
+    padding-bottom: var(--gap1);
+  }
+
+
+}
+
+@media (max-width: 577px) {
+
+  .hero__block {
+    padding-top: 77px;
+  }
+
+  .btn-color {
+    width: 270px;
+  }
+
+  .education {
+    margin-bottom: 60px;
+  }
+
+  .education__container {
+    background-size: 150px 134px;
+    background-position: 33px 0px;
+  }
+
+  .education__top {
+    width: 349px;
+  }
+
+  .education__item {
+    width: 155px;
+  }
+
+  .teacher__item:not(:nth-child(n+3)) {
+    margin-bottom: var(--gap1);
+  }
+
+  .cours {
+    margin-bottom: var(--gap2);
+  }
+
+  .cours__block {
+    max-width: 100%;
+    }
+
+  .cours__btn {
+    max-width: 180px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .education {
+    margin-bottom: 18px;
+  }
+
+  .education__container {
+    background-image: none;
+  }
+
+  .education__top {
+    margin-left: 0px;
+    width: auto;
+  }
+
+  .education__item {
+    width: auto;
+    padding-top: 40px;
+  }
+
+  .education__descr {
+    width: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .education-col:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .education__text {
+    max-width: none;
+    margin-top: 2px;
+    margin-left: 100px;
+  }
+
+  .education__list {
+    justify-content: flex-start;
+  }
+
+  .list__content {
+    /* max-width: 240px; */
+  }
+  .cours__btn {
+    padding: 0;
+    max-width: 130px;
+  }
+
+}
+
+
+@media (max-width: 515px) {
+
+  .header {
+    padding: 6px 0px 5px 0px;
+    flex-direction: row;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo {
+    width: 72px;
+    height: 16px;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 4;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 5px;
+    top: 32px;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    transition: transform .3s, opacity .3s, color 0.3s, outline 0.3s, left 0.3s, width 0.3s;
+  }
+
+  .burger__line:nth-child(1) {
+    transform: translateY(-8px);
+  }
+
+  .burger__line:nth-child(3) {
+    transform: translateY(8px);
+  }
+}
+
+@media (max-width: 420px) {
+
+  .hero__block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero__title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .hero__descr {
+    width: 289px;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .hero__btn {
+    max-width: 213px;
+    min-height: 60px;
+    padding: 0 40px;
+  }
+
+  .hero__btn a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+}
+
+@media (max-width: 340px) {
+
+  .teacher {
+    padding: 50px 0 50px 0;
+    margin-bottom: 50px;
+  }
+
+  .teacher__item:not(:nth-child(n+3)) {
+    margin-bottom: 0;
+  }
+
+  .teacher__item:not(:last-child) {
+    margin-bottom: var(--gap1);
+  }
+
+  .teacher__list {
+    flex-direction: column;
+  }
+
+  .teacher-img {
+    max-width: fit-content;
+  }
+
+  .teacher__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .teacher__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: auto;
+    width: 240px;
+  }
+
+  .list__content {
+    width: 290px;
+    max-width: none;
+}
+
+}
+
+@media (max-width: 321px) {
+
+  .education__text {
+    margin-left: 110px;
+  }
+
+  .education__item {
+    background-position: left 0px;
+    padding-top: 0;
+  }
+
+  .education__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .education__descr {
+    margin-bottom: 37px;
+  }
+
+  .teacher__name {
+    width: 199px;
+  }
+
+  .teacher__descr {
+    width: 290px;
+  }
+
+  .cours {
+    margin-bottom: 50px;
+  }
+
+  .cours__item {
+    flex-direction: column;
+  }
+
+  .cours__list:not(:nth-child(n+3)) {
+    margin-bottom: 0;
+  }
+
+  .cours__list:not(:last-child) {
+    margin-bottom: var(--gap1);
+  }
+
+  .list__content {
+    width: 290px;
+    max-width: none;
+  }
+
+  .cours__block {
+    width: 290px;
+    padding: 30px 30px 10px 30px;
+  }
+
+  .cours__btn {
+    max-width: 180px;
+}
+}

@@ -1,0 +1,409 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-width: 320px;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --color1: #fff;
+  --color2: #85859B;
+  --color3: #666666;
+  --color4: #212133;
+  --color5: #2E2B44;
+  --gap1: 30px;
+  --gap2: 80px;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*glob*/
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-color {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 24px 75.5px;
+  text-align: center;
+  color: var(--color1);
+  max-width: 270px;
+  min-height: 69px;
+  background-color: #3F2AFF;
+  border-radius: 20px;
+}
+
+
+/* HEADER */
+
+.header {
+  background-color: #3F2AFF;
+  padding: var(--gap1) 0;
+}
+
+.header__content {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__item {
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 56px;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.burger {
+  display: none;
+}
+
+/* HERO */
+
+.hero {
+  background-image: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+  background-repeat: no-repeat;
+  margin-bottom: var(--gap2);
+}
+
+.hero__img {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero__block {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.hero__title {
+  margin-bottom: var(--gap1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.hero__descr {
+  margin-bottom: 70px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+/* EDUCATION */
+
+.education {
+  margin-bottom: 40px;
+}
+
+.education__container {
+  background-image: url(../img/education.png);
+  background-repeat: no-repeat;
+  background-position: 22px 22px;
+}
+
+.education__top {
+  margin-left: 213px;
+  width: 585px;
+}
+
+.education__item {
+  padding: 34px 0;
+  padding-left: 110px;
+  margin-right: var(--gap1);
+  background-position: left 25px;
+  background-size: var(--gap2);
+  background-repeat: no-repeat;
+}
+
+.education__item--img1 {
+  background-image: url(../img/edu2.png);
+}
+
+.education__item--img2 {
+  background-image: url(../img/edu1.png);
+}
+
+.education__item--img3 {
+  background-image: url(../img/edu3.png);
+}
+
+.education__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #2E2B44;
+  margin-bottom: var(--gap1);
+}
+
+.education__descr {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.education__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #666666;
+}
+
+/* TEACHER */
+
+.teacher {
+  background-color: var(--color4);
+  padding: var(--gap2) 0;
+  margin-bottom: var(--gap2);
+}
+
+.teacher__title {
+  margin-bottom: var(--gap1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.teacher__list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.teacher__name {
+  margin-top: var(--gap1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.teacher__descr {
+  padding-top: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859B;
+}
+
+.teacher-img {
+  border-radius: 26px 26px 0 0;
+}
+
+/* COURS */
+
+.cours {
+  margin-bottom: var(--gap2);
+}
+
+.cours__title {
+  margin-bottom: var(--gap1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #212133;
+}
+
+.cours__img {
+  position: relative;
+}
+
+.cours-img {
+  width: 100%;
+}
+
+.cours__time {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 20px;
+  top: 9px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.cours__time svg {
+  margin-right: 5px;
+}
+
+.list__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #EDF0F9;
+  border-radius: 0 0 20px 20px;
+}
+
+.cours__list:not(:nth-child(n+3)) {
+  margin-bottom: var(--gap1);
+}
+
+.cours__block {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  padding: 30px 30px 0 30px;
+}
+
+.cours__name {
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #212133;
+}
+
+.cours__descr {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.cours__btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0px 55px;
+  text-align: center;
+  color: var(--color1);
+  max-width: 200px;
+  min-height: 59px;
+  background-color: #3F2AFF;
+
+}
+
+.btn {
+  padding: var(--gap1);
+}
+
+/* FOOTER */
+
+
+.footer__top {
+  background-color: var(--color5);
+  padding: var(--gap1) 0;
+}
+
+.footer__item:not(:nth-child(4n)) {
+  margin-right: var(--gap1);
+}
+
+.footer__container-bottom {
+  justify-content: center;
+}
+
+.footer__list {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer__text {
+  padding-top: 3px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.footer__text span {
+  color: #3F2AFF;
+}
+
+
+
+
+
+
